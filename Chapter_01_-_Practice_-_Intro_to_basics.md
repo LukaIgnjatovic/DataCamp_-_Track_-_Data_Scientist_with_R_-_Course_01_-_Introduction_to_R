@@ -46,6 +46,7 @@ You can also execute R commands straight in the console. This is a good way to e
 ```
 ## [1] 18
 ```
+
 **Awesome! See how the console shows the result of the R code you submitted? Now that you're familiar with the interface, let's get down to R business!**
 
 ### Arithmetic with R
@@ -125,6 +126,7 @@ With this knowledge, follow the instructions below to complete the exercise.
 ```
 ## [1] 4
 ```
+
 **Great! Head over to the next exercise.**
 
 ### Variable assignment
@@ -151,6 +153,7 @@ x
 ```
 ## [1] 42
 ```
+
 **Good job! Have you noticed that R does not print the value of a variable to the console when you did the assignment?** `x <- 42` **did not generate any output, because R assumes that you will be needing this variable in the future. Otherwise you wouldn't have stored the value in a variable in the first place, right? Proceed to the next exercise!**
 
 ### Variable assignment (2)
@@ -173,6 +176,7 @@ my_apples
 ```
 ## [1] 5
 ```
+
 **Great! Continue to the next exercise!**
 
 ### Variable assignment (3)
@@ -203,6 +207,7 @@ my_apples + my_oranges
 # Create the variable my_fruit
 my_fruit <- my_apples + my_oranges
 ```
+
 **Nice one! The great advantage of doing calculations with variables is reusability. If you just change** `my_apples` **to equal 12 instead of 5 and rerun the script,** `my_fruit` **will automatically update as well. Continue to the next exercise.**
 
 ### Apples and oranges
@@ -229,6 +234,7 @@ my_fruit
 ```
 ## [1] 11
 ```
+
 **Awesome, keep up the good work! Continue to the next exercise.**
 
 ### Basic data types in R
@@ -261,6 +267,7 @@ my_character <- "universe"
 # Change my_logical to be FALSE
 my_logical <- FALSE
 ```
+
 **Great work! Continue to the next exercise.**
 
 ### What's that data type?
@@ -301,4 +308,5 @@ class(my_logical)
 ```
 ## [1] "logical"
 ```
+
 **Congratulations! This was the last exercise for this chapter. Head over to the next chapter to get immersed in the world of vectors!**

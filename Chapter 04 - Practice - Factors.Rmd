@@ -33,6 +33,7 @@ A good example of a categorical variable is sex. In many circumstances you can l
 # Assign to the variable theory what this chapter is about!
 theory <- "factors for categorical variables"
 ```
+
 **Good job! Ready to start? Continue to the next exercise!**
 
 ### What's a factor and why would you use it? (2)
@@ -60,6 +61,7 @@ factor_sex_vector <- factor(sex_vector)
 # Print out factor_sex_vector
 factor_sex_vector
 ```
+
 **Great! If you want to find out more about the** `factor()` **function, do not hesitate to type** `?factor` **in the console. This will open up a help page. Continue to the next exercise.**
 
 ### What's a factor and why would you use it? (3)
@@ -83,6 +85,7 @@ temperature_vector <- c("High", "Low", "High","Low", "Medium")
 factor_temperature_vector <- factor(temperature_vector, order = TRUE, levels = c("Low", "Medium", "High"))
 factor_temperature_vector
 ```
+
 **Can you already tell what's happening in this exercise? Awesome! Continue to the next exercise and get into the details of factor levels.**
 
 ### Factor levels
@@ -112,6 +115,7 @@ levels(factor_survey_vector) <- c("Female", "Male")
 
 factor_survey_vector
 ```
+
 **Wonderful! Proceed to the next exercise.**
 
 ### Summarizing a factor
@@ -137,6 +141,7 @@ summary(survey_vector)
 # Generate summary for factor_survey_vector
 summary(factor_survey_vector)
 ```
+
 **Nice! Have a look at the output. The fact that you identified** `"Male"` **and** `"Female"` **as factor levels in** `factor_survey_vector` **enables R to show the number of elements for each category.**
 
 ### Battle of the sexes
@@ -160,6 +165,7 @@ female <- factor_survey_vector[2]
 # Battle of the sexes: Male 'larger' than female?
 male > female
 ```
+
 **How interesting! By default, R returns** `NA` **when you try to compare values in a factor, since the idea doesn't make sense. Next you'll learn about ordered factors, where more meaningful comparisons are possible.**
 
 ### Ordered factors
@@ -184,6 +190,7 @@ Let us say that you are leading a research team of five data analysts and that y
 # Create speed_vector
 speed_vector <- c("medium", "slow", "slow", "medium", "fast")
 ```
+
 **A job well done! Continue to the next exercise.**
 
 ### Ordered factors (2)
@@ -211,6 +218,7 @@ factor_speed_vector <- factor(speed_vector,
 factor_speed_vector
 summary(factor_speed_vector)
 ```
+
 **Great! Have a look at the console. It is now indicated that the levels indeed have an order associated, with the** `<` **sign. Continue to the next exercise.**
 
 ### Comparing ordered factors
@@ -237,4 +245,5 @@ da5 <- factor_speed_vector[5]
 # Is data analyst 2 faster than data analyst 5?
 da2 > da5
 ```
+
 **Bellissimo! What do the result tell you? Data analyst two is complaining about the data analyst five while in fact he or she is the one slowing everything down! This concludes the chapter on factors. With a solid basis in vectors, matrices and factors, you're ready to dive into the wonderful world of data frames, a very important data structure in R!**

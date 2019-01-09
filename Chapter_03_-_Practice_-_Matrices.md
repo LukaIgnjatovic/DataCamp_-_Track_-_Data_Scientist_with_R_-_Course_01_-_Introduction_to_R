@@ -45,6 +45,7 @@ matrix(1:9, byrow = TRUE, nrow = 3)
 ## [2,]    4    5    6
 ## [3,]    7    8    9
 ```
+
 **Great! Continue to the next exercise.**
 
 ### Analyze matrices, you shall
@@ -71,6 +72,7 @@ box_office <- c(new_hope, empire_strikes, return_jedi)
 # Construct star_wars_matrix
 star_wars_matrix <- matrix(box_office, byrow = TRUE, nrow = 3)
 ```
+
 **The force is actually with you! Continue to the next exercise.**
 
 ### Naming a matrix
@@ -118,6 +120,7 @@ star_wars_matrix
 ## The Empire Strikes Back 290.475  247.9
 ## Return of the Jedi      309.306  165.8
 ```
+
 **Great! You're on the way of becoming an R jedi! Continue to the next exercise.**
 
 ### Calculating the worldwide box office
@@ -173,6 +176,7 @@ worldwide_vector <- rowSums(star_wars_matrix)
 # Bind the new variable worldwide_vector as a column to star_wars_matrix
 all_wars_matrix <- cbind(star_wars_matrix, worldwide_vector)
 ```
+
 **Nice job! After adding column to a matrix, the logical next step is adding rows. Learn how in the next exercise.**
 
 ### Adding a row
@@ -231,6 +235,7 @@ star_wars_matrix2
 # Combine both Star Wars trilogies in one matrix
 all_wars_matrix <- rbind(star_wars_matrix, star_wars_matrix2)
 ```
+
 **Wonderful! Continue with the next exercise and see how you can combine the results of the** `rbind()` **function with the** `colSums()` **function!**
 
 ### The total box office revenue for the entire saga
@@ -268,6 +273,7 @@ total_revenue_vector
 ##       US   non-US 
 ## 2226.279 2087.800
 ```
+
 **Bellissimo! Head over to the next exercise to learn matrix subsetting.**
 
 ### Selection of matrix elements
@@ -328,6 +334,7 @@ mean(all_wars_matrix[1:2, 2])
 ```
 ## [1] 281.15
 ```
+
 **Nice one! Continue to the next exercise.**
 
 ### A little arithmetic with matrices
@@ -374,6 +381,7 @@ visitors
 ## Attack of the Clones    62.1400  67.74
 ## Revenge of the Sith     76.0600  93.70
 ```
+
 **Great! What do these results tell you? A staggering 92 million people went to see A New Hope in US theaters! Continue to the next exercise.**
 
 ### A little arithmetic with matrices (2)
@@ -441,4 +449,5 @@ mean(us_visitors)
 ```
 ## [1] 75.01339
 ```
+
 **It's a fact: the R force is with you! This exercise concludes the chapter on matrices. Next stop on your journey through the R language: factors.**

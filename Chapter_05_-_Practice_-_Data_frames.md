@@ -75,6 +75,7 @@ mtcars
 ## Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
 ## Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
 ```
+
 **Great! Continue to the next exercise.**
 
 ### Quick, have a look at your data set
@@ -104,6 +105,7 @@ head(mtcars)
 ## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
 ## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 ```
+
 **Wonderful! So, what do we have in this data set? For example,** `hp` **for example represents the car's horsepower; the Datsun has the lowest horse power of the 6 cars that are displayed. For a full overview of the variables' meaning, type** `?mtcars` **in the console and read the help page. Continue to the next exercise!**
 
 ### Have a look at the structure
@@ -140,6 +142,7 @@ str(mtcars)
 ##  $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
 ##  $ carb: num  4 4 1 1 2 1 4 2 2 4 ...
 ```
+
 **Nice work! Can you find all the information that is listed in the exercise's assignment? Continue to the next exercise.**
 
 ### Creating a data frame
@@ -172,6 +175,7 @@ rings <- c(FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, TRUE)
 # Create a data frame from the vectors
 planets_df <- data.frame(name, type, diameter, rotation, rings)
 ```
+
 **Great job! Continue to the next exercise. The logical next step, as you know by now, is inspecting the data frame you just created. Head over to the next exercise.**
 
 ### Creating a data frame (2)
@@ -194,6 +198,7 @@ str(planets_df)
 ##  $ rotation: num  58.64 -243.02 1 1.03 0.41 ...
 ##  $ rings   : logi  FALSE FALSE FALSE FALSE TRUE TRUE ...
 ```
+
 **Awesome! Now that you have a clear understanding of the** `planets_df` **data set, it's time to see how you can select elements from it. Learn all about in the next exercises!**
 
 ### Selection of data frame elements
@@ -229,6 +234,7 @@ planets_df[4, ]
 ##   name               type diameter rotation rings
 ## 4 Mars Terrestrial planet    0.532     1.03 FALSE
 ```
+
 **Great! Apart from selecting elements from your data frame by index, you can also use the column names. To learn how, head over to the next exercise.**
 
 ### Selection of data frame elements (2)
@@ -256,6 +262,7 @@ planets_df[1:5, "diameter"]
 ```
 ## [1]  0.382  0.949  1.000  0.532 11.209
 ```
+
 **Nice! Continue to the next exercise!**
 
 ### Only planets with rings
@@ -286,6 +293,7 @@ rings_vector
 ```
 ## [1] FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  TRUE
 ```
+
 **Great! Continue to the next exercise and discover yet another way of subsetting!**
 
 ### Only planets with rings (2)
@@ -317,6 +325,7 @@ planets_df[rings_vector, ]
 ## 7  Uranus Gas giant    4.007    -0.72  TRUE
 ## 8 Neptune Gas giant    3.883     0.67  TRUE
 ```
+
 **Wonderful! This is a rather tedious solution. The next exercise will teach you how to do it in a more concise way.**
 
 ### Only planets with rings but shorter
@@ -349,6 +358,7 @@ subset(planets_df, subset = diameter < 1)
 ## 2   Venus Terrestrial planet    0.949  -243.02 FALSE
 ## 4    Mars Terrestrial planet    0.532     1.03 FALSE
 ```
+
 **Great! Not only is the** `subset()` **function more concise, it is probably also more understandable for people who read your code. Continue to the next exercise.**
 
 ### Sorting
@@ -382,6 +392,7 @@ order(a)
 ```
 ## [1] 2 1 3
 ```
+
 **Great! Now let's use the** `order()` **function to sort your data frame!**
 
 ### Sorting your data frame
@@ -413,4 +424,5 @@ planets_df[positions, ]
 ## 6  Saturn          Gas giant    9.449     0.43  TRUE
 ## 5 Jupiter          Gas giant   11.209     0.41  TRUE
 ```
+
 **Wonderful! This exercise concludes the chapter on data frames. Remember that data frames are extremely important in R, you will need them all the time. Another very often used data structure is the list. This will be the subject of the next chapter!**

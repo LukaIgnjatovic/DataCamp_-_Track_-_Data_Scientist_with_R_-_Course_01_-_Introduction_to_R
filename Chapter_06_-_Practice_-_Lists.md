@@ -33,6 +33,7 @@ Pretty sweet for an R newbie, right?
 ```r
 # Just click the 'Submit Answer' button.
 ```
+
 **Ready, set, go! Continue to the next exercise.**
 
 ### Lists, why would you need them? (2)
@@ -49,6 +50,7 @@ You could say that a list is some kind super data type: you can store practicall
 ```r
 # Click 'Submit Answer' to start the first exercise on lists.
 ```
+
 **Cool. Let's get our hands dirty!**
 
 ### Creating a list
@@ -75,6 +77,7 @@ my_df <- mtcars[1:10, ]
 # Construct list with these different elements:
 my_list <- list(my_vector, my_matrix, my_df)
 ```
+
 **Wonderful! Head over to the next exercise.**
 
 ### Creating a named list
@@ -136,6 +139,7 @@ my_list
 ## Merc 230          22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
 ## Merc 280          19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
 ```
+
 **Great! Not only do you know how to construct lists now, you can also name them; a skill that will prove most useful in practice. Continue to the next exercise.**
 
 ### Creating a named list (2)
@@ -197,6 +201,7 @@ rev
 # Finish the code to build shining_list
 shining_list <- list(moviename = mov, actors = act, reviews = rev)
 ```
+
 **Wonderful! You now know how to construct and name lists. As in the previous chapters, let's look at how to select elements for lists. Head over to the next exercise.**
 
 ### Selecting elements from a list
@@ -266,6 +271,7 @@ shining_list$actors[2]
 ```
 ## [1] "Shelley Duvall"
 ```
+
 **Great! Selecting elements from lists is rather easy isn't it? Continue to the next exercise.**
 
 ### Adding more movie information to the list
@@ -304,4 +310,5 @@ str(shining_list_full)
 ##   ..$ comments: Factor w/ 3 levels "A masterpiece of psychological horror",..: 3 2 1
 ##  $ year     : num 1980
 ```
+
 **Great! This was the last exercise on R lists! You now have a solid basis in the R programming language, but there's so much more to learn. Check out all the other DataCamp courses and become a true data science expert!**
