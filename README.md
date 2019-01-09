@@ -35,4 +35,4 @@ In this introduction to R, you will master the basics of this beautiful open sou
 
 ### License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
